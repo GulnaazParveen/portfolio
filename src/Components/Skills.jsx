@@ -6,10 +6,7 @@ const Skills = () => {
             <section class="section Skills">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-2">
-                           
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-6  SkillsContaianer col-md-6">
                             <div class="skill-container">
                                 <div class="sec-heading skill-mainHead">
                                     <h1 class="secMain-heading"><span class="main-text mainheadText">skills</span></h1>
@@ -106,7 +103,7 @@ const Skills = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 ">
+                        <div class="col-lg-5 col-md-6">
                             <div class="box">
                                 <div class=" wave-one wave"></div>
                                 <div class="wave-two wave"></div>

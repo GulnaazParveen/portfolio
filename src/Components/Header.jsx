@@ -1,15 +1,16 @@
 import React from 'react'
 
 const Header = () => {
+    
     return (
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="heading header-left"></div>
+            <div className="container-fluid">
+                <div className="row headercontainer">
+                    <div className="col-6 d-flex ">
+                        <div className="heading header-left">dfasdds</div>
                     </div>
-                    <div class="col-md-6">
-                        <div class=" heading header-right  ">
+                    <div className="col-md-6">
+                        <div className=" heading header-right  ">
                             <nav>
                                 <ul>
                                     <li><a href="">home</a></li>

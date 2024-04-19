@@ -19,7 +19,7 @@ const Hero = () => {
             <section className="section home">
                 <div className="container-fluid">
                     <div className="row section-home">
-                        <div className="col-lg-6  col-md-5 d-flex flex-column justify-content-center align-items-center">
+                        <div className="col-md-6  d-flex flex-column justify-content-center align-items-center">
                             <div className="home-left">
                                 <div className="main-heading">
                                     <h1> Hi, I'm a Full-Stack Developer <span className="main-text">Building Interactive Experiences</span></h1>
@@ -38,7 +38,7 @@ const Hero = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-7 herobackground ">
+                        <div className="col-md-6 herobackground ">
                             <div className="home-right">
                                 <div className="row">
                                     <div className="col-6">
@@ -62,10 +62,6 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
-            <About />
-            <Skills />
-            <Work />
-            <Contact />
         </>
     )
 }

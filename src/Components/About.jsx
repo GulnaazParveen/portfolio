@@ -40,14 +40,14 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 ">
+                    <div class="row  aboutContainer ">
+                        <div class="col-6 ">
                             <div class="about-left">
-                                <div class="light-bulb-container">
+                                <div class="light-bulb-container ">
                                     <i class="fas fa-lightbulb light-bulb" id="bulb"></i>
                                 </div>
-                                <div className="row">
-                                    <div className="col-sm-6">
+                                <div className="row d-lg-flex aboutinteractive">
+                                    <div className="col-lg-6">
                                         <div class="about-container backgroundlayer">
                                             <div class="book">
                                                 <div class="cover"></div>
@@ -69,7 +69,7 @@ const About = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
+                                    <div className="col-lg-6">
                                         <div class="about-items">
                                             <div class="about-cover"></div>
                                             <div class="about-page">
@@ -82,7 +82,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="about-right">
                                 <h4>Information About Me </h4>
                                 <p class="about-content">
