@@ -508,7 +508,11 @@ h4 {
   margin-right: 20rem;
 
 }
-
+.SkillsContaianer{
+  margin-left: 2rem;
+  padding-left: 9rem;
+  margin-top: 4rem;
+ }
 .mainheadText {
   font-size: 2.4rem;
 }
@@ -685,7 +689,7 @@ h4 {
 
 /* project section */
 .work-container {
-  height: 200vh;
+  height: 180vh;
 }
 
 .port-text {
@@ -759,6 +763,26 @@ h3 {
   transform: scale(1);
 }
 
+.project{
+  position: relative;
+}
+.canvasGeometry{
+  position: absolute;
+  width: 60%;
+ 
+}
+.canvasGeometry  Canvas{
+  width: 60%;
+}
+.cube3d {
+ left: 16rem;
+}
+.geometry{
+  bottom: 2rem;
+}
+.positionsgeometry{
+  right: 0.8rem;
+}
 
 /* contact section */
 .contact {
@@ -930,4 +954,87 @@ textarea::placeholder {
   margin-top: 40rem;
   margin-left: 29rem;
   height: 400px;
+}
+
+
+@media screen and (max-width:992px) {
+  .header-right{
+    margin-right: 10rem;
+    height: 2rem;
+    margin-bottom: 0;
+  }
+  /* about section */
+  .aboutContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-left: 2.2rem;
+
+  }
+  .light-bulb-container{
+    position: relative;
+    right: 10rem;
+    top: 2rem;
+  }
+  .aboutinteractive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .about-container  {
+    position: absolute;
+    right: 35rem;
+  }
+  .about-items{
+    position: absolute;
+    right: 8rem;
+  }
+
+  /* skills container */
+  .SkillsContaianer{
+   margin-left: 0;
+   padding-left: 0;
+  }
+  .box{
+    margin-left: 5rem;
+  }
+  .skill-mainHead{
+    margin-right: 0;
+  }
+.work-container{
+  height: 150vh;
+}
+.project{
+  position: relative;
+}
+.canvasGeometry{
+  position: absolute;
+  width: 60%;
+ 
+}
+.canvasGeometry  Canvas{
+  width: 60%;
+}
+.cube3d {
+ left: 5rem;
+}
+.geometry{
+  bottom: 15rem;
+}
+}
+@media screen and (max-width:768px) {
+  .headercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-right{
+    margin-right: 0rem;
+  }
+  .header-right ul li {
+    margin: 0rem 1rem 0 1rem;
+  }
+  
 }
