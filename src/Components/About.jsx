@@ -71,6 +71,15 @@ const About = () => {
                       <div className="items">
                         <div className="item">
                           <div className="item-name">
+                            Central Institute of Technologies,Kokrajhar
+                          </div>
+                          <div className="item-depart">Btech(CSE)</div>
+                        </div>
+                        <div className="completion-date">2021-2025</div>
+                      </div>
+                      <div className="items">
+                        <div className="item">
+                          <div className="item-name">
                             S.S.S Mahila College Bihat
                           </div>
                           <div className="item-depart">12th(Science)</div>

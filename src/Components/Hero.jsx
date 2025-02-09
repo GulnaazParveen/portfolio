@@ -15,28 +15,41 @@ const Hero = () => {
               <div className="col-md-6  d-flex flex-column justify-content-center align-items-center my-3">
                 <div className="home-left">
                   <div className="main-heading">
-                    <h1>
-                      {" "}
-                      Hi, I'm a Full-Stack Developer{" "}
+                    <h1
+                      style={{
+                        fontSize: "2.4rem"
+                      }}
+                    >
+                      Full-Stack Developer
                       <span className="main-text">
                         Building Interactive Experiences
                       </span>
                     </h1>
                   </div>
                   <div className="subtext">
-                    <p>
-                      At the crossroads of creativity and tech skills, I excel
-                      at making awesome 3D experiences that grab attention. I
-                      know JavaScript, HTML, CSS, Three.js, Node.js, MongoDB,
-                      Express.js, and stuff like Bootstrap. I turn ideas into
-                      cool web apps that you can interact with. Check out my
-                      portfolio and see the fun for yourself.
+                    <p
+                      style={{
+                        fontSize: "1.3rem",
+                        padding: "0.8rem",
+                      }}
+                    >
+                      I create immersive 3D and web experiences, blending
+                      creativity with technology. Passionate about full-stack
+                      development, I turn ideas into interactive and dynamic
+                      applications.
                     </p>
                   </div>
                   <div className="btn-container text-center">
                     <a href="/ResumeGulnaazParveen.pdf" className="main-btn ">
-                      <span className="btn-text" style={{ fontSize: "0.9rem" }}>
-                        explore my work
+                      <span
+                        className="btn-text"
+                        style={{
+                          fontSize: "1rem ",
+                          fontWeight: "700",
+                          fontFamily: "Outfit, sans-serif",
+                        }}
+                      >
+                        get resume
                       </span>
                       <span className="btn-icon" style={{ margin: "0 0.2rem" }}>
                         <DownloadIcon />
