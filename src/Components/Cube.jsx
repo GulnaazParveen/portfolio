@@ -20,7 +20,7 @@ const Cube = () => {
                         position={[0, 0, 3]}
                     />
                     <color attach="background" args={["hotpink"]} />
-                    <Text ref={textRef} fontSize={2} color="#555">
+                    <Text ref={textRef} fontSize={1} color="#555">
                         Hello
                     </Text>
                 </RenderTexture>

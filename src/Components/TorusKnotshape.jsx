@@ -1,20 +1,27 @@
-
-import { useFrame } from '@react-three/fiber';
-import React, { useRef } from 'react'
-
+import { useFrame } from "@react-three/fiber";
+import React, { useMemo, useRef } from "react";
+import * as THREE from 'three'; // Import THREE
 const TorusKnotshape = () => {
-    const ref = useRef()
-    useFrame((state, delta) => {
-        ref.current.rotation.x += delta
-        ref.current.rotation.y += delta
-        ref.current.position.z = Math.sin(state.clock.elapsedTime) * 0.5
-    })
-    return (
-        <mesh  ref={ref}>
-            <torusKnotGeometry args={[0.5,0.1,1000,50]} />
-            <meshStandardMaterial color={"orange"} />
-        </mesh>
-    )
-}
+  const ref = useRef();
 
-export default TorusKnotshape
+  // UseMemo for geometry and material
+  const geometry = useMemo(
+    () => new THREE.TorusKnotGeometry(0.5, 0.2, 300, 20),
+    []
+  );
+  const material = useMemo(
+    () => new THREE.MeshStandardMaterial({ color: "#1BB3D1" }),
+    []
+  );
+
+  // Apply rotation and position animations
+  useFrame((state, delta) => {
+    ref.current.rotation.x += delta;
+    ref.current.rotation.y += delta;
+    ref.current.position.z = Math.sin(state.clock.elapsedTime) * 0.3;
+  });
+
+  return <mesh ref={ref} geometry={geometry} material={material} />;
+};
+
+export default TorusKnotshape;

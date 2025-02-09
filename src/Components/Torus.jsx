@@ -1,25 +1,13 @@
-// import React from 'react'
-// const Torus = () => {
-//   return (
-//     <mesh>
-//         <torusGeometry args={[ 7.2, 2,16, 100]}/>
-//         <meshStandardMaterial color={"orange"}/>
-//     </mesh>
-//   )
-// }
-
-// export default Torus
-import React, { useState } from 'react'
-
+import React, { useMemo } from "react";
+import * as THREE from 'three'; // Import THREE
 const Torus = () => {
-  const [radius, setRadius] = useState(3.6)
-  const [tube, setTube] = useState(1)
+  const geometry = useMemo(() => new THREE.TorusGeometry(3.6, 1, 16, 100), []);
+  const material = useMemo(
+    () => new THREE.MeshStandardMaterial({ color: "#FC26B4" }),
+    []
+  );
 
-  return (
-    <mesh >
-      <torusGeometry args={[radius, tube, 16, 100]}/>
-      <meshStandardMaterial color={"#F73C6D"}/>
-    </mesh>
-  )
-}
-export default Torus
+  return <mesh geometry={geometry} material={material} />;
+};
+
+export default Torus;

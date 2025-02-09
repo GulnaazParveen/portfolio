@@ -6,11 +6,11 @@ const Header = () => {
         <header>
             <div className="container-fluid">
                 <div className="row headercontainer">
-                    <div className="col-6 d-flex ">
-                        <div className="heading header-left">dfasdds</div>
+                    <div className="col-6 d-flex justify-content-start align-items-center heading ">
+                        <div className="header-left">gulnaaz parveen</div>
                     </div>
-                    <div className="col-md-6">
-                        <div className=" heading header-right  ">
+                    <div className="col-6">
+                        <div className="header-right  ">
                             <nav>
                                 <ul>
                                     <li><a href="">home</a></li>
