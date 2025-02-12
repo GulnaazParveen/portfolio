@@ -38,7 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <section className="section work-container">
+      <section className="section" style={{padding:"2.5rem 0 0 0"}}>
         <div className="container ">
           <div className="row">
             <div className="col-5">

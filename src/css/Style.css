@@ -517,67 +517,54 @@ h4 {
   color: var(--color-white);
 }
 
-.skill-item {
-  border-radius: 5px;
-  border: 2px solid var(--color-grey4);
-  height: 350px;
+.skills-card {
+  background: rgba(0, 0, 0, 0.6);
+  /* Dark transparent background */
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  /* Neon border */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  padding: 36px 0 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.text-items {
-  margin-left: 1rem;
+.skills-card:hover {
+  transform: scale(1.03);
+  /* Only scaling on hover, no rotation */
+  box-shadow: 0 0 3px rgba(0, 255, 255, 0.8);
 }
 
 .skill-name {
-  font-size: 1.7rem;
-  font-weight: 600;
-  font-family: "Outfit", sans-serif;
-
+  color: #00ffff;
+  text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.7);
+  font-size: 1.4rem;
+  /* Increased font size */
+  margin-bottom: 10px;
+}
+.secondRow-card{
+  padding: 50px 0 38px 0;
+}
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
 }
 
-.text-item-head {
-  color: var(--color-white);
-  font-size: 1.3rem;
-  margin: 0 0.4rem 0 0.3rem;
-  font-family: "Outfit", sans-serif;
-  width: 185px;
-  font-weight: 500;
+.skills-card li {
+  color: #fff;
+  font-size: 1rem;
+  /* Increased font size */
+  margin-bottom: 5px;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.text-item {
-  width: 100%;
-  margin: 0.1rem 0;
+.skills-card:hover li {
+  opacity: 1;
 }
-
-.text {
-  font-size: 1.2rem;
-  background: -webkit-linear-gradient(right, #73E0F5, #73E0F5, #73E0F5);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 600;
-}
-
-.skill-image {
-  height: 55px;
-  width: 55px;
-  background-color: var(--color-white);
-  /* background-color: #1BB3D1; */
-  color: var(--color-white);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  margin: 1.2rem;
-  padding: 1rem;
-  margin-top: 0;
-}
-
-.image {
-  height: 32px;
-  width: 32px;
-  color: var(--color-white);
-}
-
-.skill-text {
-  font-weight: 600;
+.firstrow-card{
+  padding: 2.5rem;
 }
 
 .box {
@@ -847,7 +834,7 @@ h3 {
 }
 
 .works {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .project {
@@ -937,7 +924,7 @@ align-items: center;
   flex-direction: column;
   min-height: 18vh;
   background-color: #1e293b;
-  color: #454e56;
+  color: #535d66;
   font-size: 1rem;
 }
 .line-box{
@@ -952,5 +939,6 @@ align-items: center;
 }
 .footer-text{
   margin: 1rem 0 0.5rem 0;
-  font-weight: 600;
+  font-weight: 500;
+    font-family: "Outfit", sans-serif;
 }

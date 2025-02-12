@@ -17,7 +17,7 @@ const Hero = () => {
                   <div className="main-heading">
                     <h1
                       style={{
-                        fontSize: "2.4rem"
+                        fontSize: "2.4rem",
                       }}
                     >
                       Full-Stack Developer
@@ -39,22 +39,43 @@ const Hero = () => {
                       applications.
                     </p>
                   </div>
-                  <div className="btn-container text-center">
-                    <a href="/ResumeGulnaazParveen.pdf" className="main-btn ">
-                      <span
-                        className="btn-text"
-                        style={{
-                          fontSize: "1rem ",
-                          fontWeight: "700",
-                          fontFamily: "Outfit, sans-serif",
-                        }}
-                      >
-                        get resume
+                  <div className="btn-container text-center ">
+                    <div className="cta">
+                      <a href="/ResumeGulnaazParveen.pdf" className="main-btn ">
+                        <span
+                          className="btn-text"
+                          style={{
+                            fontSize: "1rem ",
+                            fontWeight: "700",
+                            fontFamily: "Outfit, sans-serif",
+                          }}
+                        >
+                          get resume
+                        </span>
+                        <span
+                          className="btn-icon"
+                          style={{ margin: "0 0.2rem" }}
+                        >
+                          <DownloadIcon />
+                        </span>
+                      </a>
+                    </div>
+                    <div class="follow-link-container">
+                      <span class="link-icons">
+                        <a
+                          href="https://www.linkedin.com/in/gulnaaz-parveen/"
+                          class="icon"
+                        >
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a
+                          href="https://github.com/GulnaazParveen"
+                          class="icon"
+                        >
+                          <i class="fa-brands fa-github"></i>
+                        </a>
                       </span>
-                      <span className="btn-icon" style={{ margin: "0 0.2rem" }}>
-                        <DownloadIcon />
-                      </span>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>

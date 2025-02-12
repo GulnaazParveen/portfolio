@@ -19,7 +19,7 @@ const About = () => {
             </div>
             <div class="row ">
               <div class="col-md-6 ">
-                <div className="about-left">
+                <div className="about-left " style={{padding:"4rem 0 0 0"}}>
                   <div class="about-items">
                     <div class="book">
                       <div class="cover"></div>
@@ -96,19 +96,6 @@ const About = () => {
                         <div className="completion-date">2017</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="follow-link-container">
-                    <span class="link-text">
-                      follow <span class="main-text">me on:</span>
-                    </span>
-                    <span class="link-icons">
-                      <a href="" class="icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                      </a>
-                      <a href="" class="icon">
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                    </span>
                   </div>
                 </div>
               </div>
