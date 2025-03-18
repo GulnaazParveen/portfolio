@@ -8,37 +8,42 @@ import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 const Work = () => {
   const projects = [
     {
-      title: "Jobportal not found",
+      title: "Jobportal",
       imgUrl: "/images/jobportal.png",
       githubLink: "https://github.com/GulnaazParveen/jobPortal_Mern",
-      linkedinLink: "https://www.linkedin.com/in/gulnaaz-parveen/",
+      description: "A MERN-based job portal for employers and job seekers.",
+    },
+    {
+      title: "SynChat",
+      imgUrl: "/images/chat.png",
+      githubLink: "https://github.com/GulnaazParveen/SyncChat",
+      description:
+        "Real-time chat application with secure JWT authentication and seamless messaging.",
     },
     {
       title: "Weather App",
       imgUrl: "/images/weather.png",
       githubLink: "https://github.com/GulnaazParveen/Node-Weather",
-      linkedinLink: "https://www.linkedin.com/in/gulnaaz-parveen",
+      description: "Real-time weather updates using Node.js and APIs.",
     },
-
     {
-      title: "Spotify not found",
+      title: "Spotify Clone",
       imgUrl: "/images/spotify.png",
       githubLink: "https://github.com/GulnaazParveen/reduxSpotify",
-      linkedinLink: "https://www.linkedin.com/in/gulnaaz-parveen/",
+      description: "A Redux-based Spotify clone with authentication.",
     },
     {
-      title: "Tic-Toe not found",
+      title: "Tic-Toe Game",
       imgUrl: "/images/ticToe.png",
       githubLink: "https://github.com/GulnaazParveen/PRODIGY_WD_03",
-      linkedinLink: "https://www.linkedin.com/in/gulnaaz-parveen/",
+      description: "Interactive Tic-Tac-Toe game built with React.",
     },
-    
-    // Add more projects here
   ];
+    // Add more projects here
 
   return (
     <>
-      <section className="section" style={{padding:"2.5rem 0 0 0"}}>
+      <section className="section" style={{ padding: "2.5rem 0 0 0" }}>
         <div className="container ">
           <div className="row">
             <div className="col-5">
@@ -54,7 +59,7 @@ const Work = () => {
                     </div>
                     <div className="icons">
                       <span class="btn-icons">
-                       <ArrowCircleDownIcon className="arrowIcon"/>
+                        <ArrowCircleDownIcon className="arrowIcon" />
                       </span>
                     </div>
                   </div>
@@ -65,50 +70,43 @@ const Work = () => {
               <Project />
             </div>
           </div>
+
+          {/* Swiper Section */}
           <div className="mySwiperContainer">
-            <div className="card-swiper-wrapper">
-              <Swiper
-                modules={[Pagination]} // Pass Pagination module here
-                spaceBetween={30} // Space between slides
-                slidesPerView={2} // Number of cards visible at a time
-                pagination={{
-                  clickable: true,
-                  type: "bullets", // Pagination as bullets
-                  el: ".custom-pagination", // Bind to a custom class
-                }}
-                className="mySwiper"
-              >
-                {projects.map((project, index) => (
-                  <SwiperSlide key={index} className="custom-slide">
-                    <div className="portfolio-item">
-                      <div className="port-image">
-                        <img src={project.imgUrl} alt={project.title} />
-                      </div>
-                      <div className="hover-item">
-                        <div className="icons">
-                          <a
-                            href={project.linkedinLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="icon"
-                          >
-                            <i className="fa-brands fa-linkedin"></i>
-                          </a>
-                          <a
-                            href={project.githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="icon"
-                          >
-                            <i className="fa-brands fa-github"></i>
-                          </a>
-                        </div>
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={28}
+              slidesPerView={3}
+              pagination={{
+                clickable: true,
+                type: "bullets",
+                el: ".custom-pagination",
+              }}
+              style={{padding:"15px"}}
+            >
+              {projects.map((project, index) => (
+                <SwiperSlide key={index} className="custom-slide">
+                  <div className="portfolio-item">
+                    <div className="port-image">
+                      <img src={project.imgUrl} alt={project.title} />
+                    </div>
+                    <div className="project-details">
+                      <h3>{project.title}</h3>
+                      <p>{project.description}</p>
+                      <div className="project-links">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fa-brands fa-github"></i>
+                        </a>
                       </div>
                     </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
             <div className="custom-pagination"></div>
           </div>
         </div>

@@ -1,109 +1,78 @@
-
-import React, { useState, useEffect } from 'react';
+import React from "react";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
-const About = () => {
 
-    return (
-      <>
-        <section class="section about">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="sec-heading">
-                  <h1 class="secMain-heading">
-                    about <span class="main-text">me</span>
-                  </h1>
-                </div>
-              </div>
+const About = () => {
+  return (
+    <section className="section about">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="sec-heading">
+              <h1 className="secMain-heading">
+                About <span className="main-text">Me</span>
+              </h1>
             </div>
-            <div class="row ">
-              <div class="col-md-6 ">
-                <div className="about-left " style={{padding:"4rem 0 0 0"}}>
-                  <div class="about-items">
-                    <div class="book">
-                      <div class="cover"></div>
-                      <div class="page"></div>
-                      <div class="page"></div>
-                      <div class="page"></div>
-                      <div class="page"></div>
-                      <div class="page"></div>
-                      <div class="page"></div>
-                      <div class="page"></div>
-                      <div class="last-page"></div>
-                      <div class="back-cover"></div>
-                    </div>
-                    <div id="backgroundwave">
-                      <div class=" wave-one wave"></div>
-                      <div class="wave-two wave"></div>
-                      <div class="wave-three wave"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-right">
-                  <div className="top">
-                    <div className="about-heading">
-                      <div className="head-icon ">
-                        <WorkIcon className="workIcon" />
-                      </div>
-                      <h4>experiences </h4>
-                    </div>
-                    <div className="about-content">
-                      <div className="items">
-                        <div className="item">
-                          <div className="item-name">celebal Technologies</div>
-                          <div className="item-depart">reactjs</div>
-                        </div>
-                        <div className="completion-date">june-aug-2024</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bottom">
-                    <div className="about-heading">
-                      <div className="head-icon">
-                        <SchoolIcon className="education" />
-                      </div>
-                      <h4>education</h4>
-                    </div>
-                    <div className="about-content">
-                      <div className="items">
-                        <div className="item">
-                          <div className="item-name">
-                            Central Institute of Technologies,Kokrajhar
-                          </div>
-                          <div className="item-depart">Btech(CSE)</div>
-                        </div>
-                        <div className="completion-date">2021-2025</div>
-                      </div>
-                      <div className="items">
-                        <div className="item">
-                          <div className="item-name">
-                            S.S.S Mahila College Bihat
-                          </div>
-                          <div className="item-depart">12th(Science)</div>
-                        </div>
-                        <div className="completion-date">2017-2019</div>
-                      </div>
-                      <div className="items">
-                        <div className="item">
-                          <div className="item-name">
-                            Utkramit M S Papraur,Barauni
-                          </div>
-                          <div className="item-depart">10th</div>
-                        </div>
-                        <div className="completion-date">2017</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-md-6">
+            <div className="about-left">
+              <div className="hero-card">
+                <img src="/Hero.png" alt="Hero" className="hero-image" />
               </div>
             </div>
           </div>
-        </section>
-      </>
-    );
-}
 
-export default About
+          {/* Right: About Content */}
+          <div className="col-md-6">
+            <div className="about-right">
+              <div className="about-content">
+                <h2>Hi, I'm Gulnaaz</h2>
+                <p>
+                  A passionate Frontend Developer who loves crafting engaging,
+                  high-performance web applications. I specialize in building
+                  scalable and user-friendly interfaces with modern web
+                  technologies.
+                </p>
+
+                <div className="about-details">
+                  <div className="detail-item">
+                    <div className="icon-container">
+                      <WorkIcon className="workIcon" />
+                    </div>
+                    <div>
+                      <h4>Experience</h4>
+                      <p>
+                        React.js Intern at Celebal Technologies (June - Aug
+                        2024)
+                      </p>
+                    </div>
+                  </div>
+                  <div className="detail-item">
+                    <div className="icon-container">
+                      <SchoolIcon className="education" />
+                    </div>
+                    <div>
+                      <h4>Education</h4>
+                      <p>
+                        B.Tech, Computer Science - CIT Kokrajhar (2021-2025)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <button className="btn btn-secondary main-btn">
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

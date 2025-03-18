@@ -12,7 +12,7 @@ const Hero = () => {
         <section className="section home">
           <div className="container-fluid">
             <div className="row section-home">
-              <div className="col-md-6  d-flex flex-column justify-content-center align-items-center my-3">
+              <div className="col-md-7  d-flex flex-column justify-content-center align-items-center my-3">
                 <div className="home-left">
                   <div className="main-heading">
                     <h1
@@ -30,7 +30,8 @@ const Hero = () => {
                     <p
                       style={{
                         fontSize: "1.3rem",
-                        padding: "0.8rem",
+                        paddingRight:"2rem 5rem 0rem 0rem",
+                        marginBottom:"2rem"
                       }}
                     >
                       I create immersive 3D and web experiences, blending
@@ -79,33 +80,20 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 herobackground ">
+              <div className="col-md-5 herobackground ">
                 <div className="home-right">
-                  <div className="row">
-                    <div className="col-6 herobox">
-                      <div class="box herowave  ">
-                        <div class=" wave-one wave cubewave"></div>
-                        <div class="wave-two wave cubewave"></div>
-                        <div class="wave-three wave cubewave"></div>
-                      </div>
-                      <div className="Canvas">
-                        <Canvas camera={{ fov: 8, position: [-8, 0, 8] }}>
-                          <OrbitControls enableZoom={false} />
-                          <ambientLight />
-                          <directionalLight position={[3, 2, 1]} />
-                          <Cube />
-                        </Canvas>
-                      </div>
-                    </div>
-                    <div className="col-6">
-                      <div className="main-image">
-                        <img
-                          src="Hero.png"
-                          alt="image not found"
-                          className="img-fluid"
-                        />
-                      </div>
-                    </div>
+                  <div class="box herowave  ">
+                    <div class=" wave-one wave cubewave"></div>
+                    <div class="wave-two wave cubewave"></div>
+                    <div class="wave-three wave cubewave"></div>
+                  </div>
+                  <div className="Canvas">
+                    <Canvas camera={{ fov: 8, position: [-8, 0, 8] }}>
+                      <OrbitControls enableZoom={false} />
+                      <ambientLight />
+                      <directionalLight position={[3, 2, 1]} />
+                      <Cube />
+                    </Canvas>
                   </div>
                 </div>
               </div>
