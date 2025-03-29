@@ -95,7 +95,7 @@ const Hero = () => {
                       fallback={
                         <mesh>
                           <boxGeometry args={[1, 1, 1]} />
-                          <meshStandardMaterial color="gray" />
+                          <meshStandardMaterial color="hotpink" />
                         </mesh>
                       }
                     >
