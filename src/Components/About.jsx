@@ -63,7 +63,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <button className="btn btn-secondary main-btn">
+                <button className=" btn-primary main-btn">
                   Contact Me
                 </button>
               </div>

@@ -18,7 +18,7 @@ const TorusKnotshape = () => {
   useFrame((state, delta) => {
     ref.current.rotation.x += delta;
     ref.current.rotation.y += delta;
-    ref.current.position.z = Math.sin(state.clock.elapsedTime) * 0.3;
+    ref.current.position.z = Math.sin(state.clock.elapsedTime) * 0.2;
   });
 
   return <mesh ref={ref} geometry={geometry} material={material} />;

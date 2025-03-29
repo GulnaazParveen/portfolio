@@ -20,7 +20,7 @@ const Skills = () => {
               <div className="skills-card w-100">
                 <h3 className="skill-name">Frontend</h3>
                 <ul>
-                  <li>🔹 HTML | CSS | JS | React</li>
+                  <li>🔹 HTML | CSS | JS | React | Redux</li>
                   <li>🎨 Tailwind | MUI | Bootstrap</li>
                 </ul>
               </div>
@@ -31,7 +31,7 @@ const Skills = () => {
                 <h3 className="skill-name">Backend</h3>
                 <ul>
                   <li>🔹 Node.js, Express.js</li>
-                  <li>🗄️ MongoDB, MySQL, REST APIs</li>
+                  <li>🗄️ MongoDB, MySQL,SQL,REST APIs</li>
                 </ul>
               </div>
             </div>
@@ -66,8 +66,8 @@ const Skills = () => {
               <div className="skills-card w-100 secondRow-card">
                 <h3 className="skill-name">Testing &amp; QA</h3>
                 <ul>
-                  <li>🔹 Jest, Mocha, Chai</li>
-                  <li>🔹 Cypress, React Testing Library</li>
+                  <li>🔹 Jest</li>
+                  <li>🔹 React Testing Library</li>
                 </ul>
               </div>
             </div>

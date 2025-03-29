@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo, Suspense } from 'react'
 import styled from "styled-components"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, PerspectiveCamera, RenderTexture } from '@react-three/drei'
@@ -20,6 +20,15 @@ const Title = styled.h1`
 const CustomCanvas = styled(Canvas)`
   margin: 0; /* Set margin to zero */
 `;
+const MemoizedCanvas = memo(({ children, fov, position }) => (
+  <Canvas frameloop="demand" camera={{ fov, position }}>
+    <OrbitControls enableZoom={false} />
+    <ambientLight  />
+    <directionalLight position={[3, 2, 1]} />
+    <Suspense fallback={null}>{children}</Suspense>
+  </Canvas>
+));
+
 const Project = () => {
   return (
     <Section className="container">
@@ -27,23 +36,17 @@ const Project = () => {
         {/* First Canvas */}
         <div className="col-lg-6">
           <div className="canvasGeometry">
-            <Canvas camera={{ fov: 30, position: [5, 5, 20] }}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight />
-              <directionalLight position={[3, 2, 1]} />
+            <MemoizedCanvas fov={30} position={[5, 5, 20]}>
               <Torus />
-              <Conecomponent/>
-            </Canvas>
+              <Conecomponent />
+            </MemoizedCanvas>
           </div>
         </div>
         <div className="col-lg-6">
           <div className="canvasGeometry">
-            <Canvas camera={{ fov: 18, position: [4, 4, 5] }}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight />
-              <directionalLight position={[3, 2, 1]} />
+            <MemoizedCanvas fov={18} position={[4, 4, 5]}>
               <TorusKnotshape />
-            </Canvas>
+            </MemoizedCanvas>
           </div>
         </div>
       </div>
@@ -51,4 +54,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default memo(Project);

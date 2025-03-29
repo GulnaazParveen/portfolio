@@ -21,16 +21,17 @@ const Work = () => {
         "Real-time chat application with secure JWT authentication and seamless messaging.",
     },
     {
+      title: "Git",
+      imgUrl: "/images/GIT.png",
+      githubLink: "https://github.com/GulnaazParveen/version_control_system",
+      description:
+        "A custom-built version control system inspired by Git, featuring file versioning, object storage, and commit tracking.",
+    },
+    {
       title: "Weather App",
       imgUrl: "/images/weather.png",
       githubLink: "https://github.com/GulnaazParveen/Node-Weather",
       description: "Real-time weather updates using Node.js and APIs.",
-    },
-    {
-      title: "Spotify Clone",
-      imgUrl: "/images/spotify.png",
-      githubLink: "https://github.com/GulnaazParveen/reduxSpotify",
-      description: "A Redux-based Spotify clone with authentication.",
     },
     {
       title: "Tic-Toe Game",
@@ -39,7 +40,6 @@ const Work = () => {
       description: "Interactive Tic-Tac-Toe game built with React.",
     },
   ];
-    // Add more projects here
 
   return (
     <>
