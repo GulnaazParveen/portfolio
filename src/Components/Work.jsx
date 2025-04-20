@@ -66,7 +66,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="col-7 mb-5 mt-5 ">
+            <div className="col-7 mb-5 mt-5 project">
               <Project />
             </div>
           </div>
@@ -76,13 +76,18 @@ const Work = () => {
             <Swiper
               modules={[Pagination]}
               spaceBetween={28}
-              slidesPerView={3}
+              // slidesPerView={3}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
               pagination={{
                 clickable: true,
                 type: "bullets",
                 el: ".custom-pagination",
               }}
-              style={{padding:"15px"}}
+              style={{  padding: "15px" }}
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="custom-slide">

@@ -22,7 +22,7 @@ const Hero = () => {
                       fontSize: "2.4rem",
                     }}
                   >
-                    Full Stack Developer
+                    <span className="main-head-text">Full Stack Developer </span>
                     <span className="main-text">
                       Building Interactive Experiences
                     </span>
@@ -81,10 +81,10 @@ const Hero = () => {
             </div>
             <div className="col-md-5 herobackground">
               <div className="home-right">
-                <div className="box herowave">
-                  <div className="wave-one wave cubewave"></div>
-                  <div className="wave-two wave cubewave"></div>
-                  <div className="wave-three wave cubewave"></div>
+                <div className="box ">
+                  <div className="wave-one wave "></div>
+                  <div className="wave-two wave "></div>
+                  <div className="wave-three wave "></div>
                 </div>
                 <div className="Canvas">
                   <Canvas camera={{ fov: 8, position: [-8, 0, 8] }}>
